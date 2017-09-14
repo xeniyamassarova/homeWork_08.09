@@ -1,130 +1,104 @@
 <DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Вакансия</title>
 </head>
 <body>
-    <div>
-        <h1>Вакансия: Junior Frontend Developer</h1>
-        <style> 
-            h1{ 
-             font-family: 'Times New Roman', Helvetica, Verdana, sans-serif;
-             font-style: oblique;
-            }
-            body {
-                margin: 20px auto 20px auto;
-                width: 700px;
-            }
-            
-           </style>
-    </div>
-    <div>  
-        <div style="display:inline-block;">
-            <img src="img/cat.jpg" width="300" height="200">
+    <div class="content">
+        <div class="vacancy">
+            <h1>Вакансия: Junior Frontend Developer</h1>
         </div>
-        <div style="display:inline-block; vertical-align:top;" >
-            <p>Имя: Ксения<br><a href="https://github.com/xeniyamassarova">GitHub</a><br>Опыт работы: нет</p>
+        <div class="piublock">  
+            <div class="photobox">
+                <a class="photo" src="img/cat.jpg"></a>
+            </div>
+            <div class="user" >
+                <p>Имя: Ксения<br><a href="https://github.com/xeniyamassarova">GitHub</a><br>Опыт работы: нет</p>
+            </div>
         </div>
-    </div>
-    <div>
-        <h2 style="display:inline-block;">Дата собеседования:</h2>
-        <div style="display:inline-block;">
-             <input type="date" name="bday">
-         </div>
-              
-          
-    </div>
-    <div>
-        <h2>Уровень Английского языка:</h2>
         <div>
-            <input type="radio" name="gender" value="плохо" checked> Плохо
-            <input type="radio" name="gender" value="средне"> Средне
-            <input type="radio" name="gender" value="хорошо"> Хорошо
-            <input type="radio" name="gender" value="превосходно"> Превосходно
-        </div>
-    </div>
-    <div>
-        <h2>Ключевые Навыки:</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS/LESS</li>
-            <li>JavaScript</li>
-        </ul>
-        <div>
-                <input type="text" name="навык" placeholder="Введите навык...">
-                <input type="submit" value="Добавить в список">
-        </div>
-    </div>
-    <div>
-        <h2 style="display:inline-block;">Коммуникабельность:</h2>
-        <div style="display:inline-block;">
-            <select name="тип коммуникабельности">
-            <option value="Выберите тип" disabled selected>Выберите из списка</option>
-              <option value="Доминантный тип">Доминантный тип</option>
-              <option value="Мобильный тип">Мобильный тип</option>
-              <option value="Ригидный тип">Ригидный тип</option>
-              <option value="Интровертный тип">Интровертный тип</option>
-            </select>
-        </div>
-    </div>
-    <div>
-        <h2 style="display:inline-block;">Желаемая з/п:</h2>
-        <div style="display:inline-block;">
-            <input type="number" name="значение" placeholder="Введите значение...">
-        </div>
-    </div>
-    <div>
-        <h2>Подходит по критериям:</h2>
-        <div>
-            <input type="checkbox" name="criterion1" value="Знание английского">Знание английского
-            <input type="checkbox" name="criterion" value="оклад">Оклад 
-            <input type="checkbox" name="criterion" value="Навыки">Навыки
-            <input type="checkbox" name="criterion" value="Свой чел">Сразу видно, что свой человек
-        </div>
-    </div>
-    <div>
-        <h2>Образование, курсы и т.п.:</h2>
-        <table>
-             <tr>
-                <th>#</th>
-                <th>Сроки обучения</th>
-                <th>Наименование учебного заведения, курсов</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>01.03.2017 - 04.05.2017</td>
-                <td>Codeacademy</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>06.09.2017</td>
-                <td>level Up</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>дд.мм.гггг-дд.мм.гггг</td>
-                <td>Какой-то курс</td>
-            </tr>
- 
-        </table>
-        <style>
-                table {
-                    font-family: 'Times New Roman', sans-serif;
-                    border-collapse: collapse;
-                    width: 100%;
-                }
+            <h2 style="display:inline-block;">Дата собеседования:</h2>
+            <div style="display:inline-block;">
+                <input type="date" name="bday">
+            </div>
+                
             
-                td, th {
-                    border: 1px solid #474646;
-                    text-align: left;
-                    padding: 8px;
-                }
-            
-                tr:nth-child(even) {
-                    background-color: #B7BBDD;
-                }
-        </style>
-    </div>
+        </div>
+        <div>
+            <h2>Уровень Английского языка:</h2>
+            <div>
+                <input type="radio" name="gender" value="плохо" checked> Плохо
+                <input type="radio" name="gender" value="средне"> Средне
+                <input type="radio" name="gender" value="хорошо"> Хорошо
+                <input type="radio" name="gender" value="превосходно"> Превосходно
+            </div>
+        </div>
+        <div>
+            <h2>Ключевые Навыки:</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+            </ul>
+            <div>
+                    <input type="text" name="навык" placeholder="Введите навык...">
+                    <input type="submit" value="Добавить в список">
+            </div>
+        </div>
+        <div>
+            <h2 style="display:inline-block;">Коммуникабельность:</h2>
+            <div style="display:inline-block;">
+                <select name="тип коммуникабельности">
+                <option value="Выберите тип" disabled selected>Выберите из списка</option>
+                <option value="Доминантный тип">Доминантный тип</option>
+                <option value="Мобильный тип">Мобильный тип</option>
+                <option value="Ригидный тип">Ригидный тип</option>
+                <option value="Интровертный тип">Интровертный тип</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <h2 style="display:inline-block;">Желаемая з/п:</h2>
+            <div style="display:inline-block;">
+                <input type="number" name="значение" placeholder="Введите значение...">
+            </div>
+        </div>
+        <div>
+            <h2>Подходит по критериям:</h2>
+            <div>
+                <input type="checkbox" name="criterion1" value="Знание английского">Знание английского
+                <input type="checkbox" name="criterion" value="оклад">Оклад 
+                <input type="checkbox" name="criterion" value="Навыки">Навыки
+                <input type="checkbox" name="criterion" value="Свой чел">Сразу видно, что свой человек
+            </div>
+        </div>
+        <div>
+            <h2>Образование, курсы и т.п.:</h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>01.03.2017 - 04.05.2017</td>
+                    <td>Codeacademy</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>06.09.2017</td>
+                    <td>level Up</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>дд.мм.гггг-дд.мм.гггг</td>
+                    <td>Какой-то курс</td>
+                </tr>
     
+            </table>
+        </div>
+    </div>
 </body>
 </html>
