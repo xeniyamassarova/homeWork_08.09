@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Вакансия</title>
 </head>
 <body>
@@ -9,6 +10,7 @@
         <div class="vacancy">
             <h1>Вакансия: Junior Frontend Developer</h1>
         </div>
+        
         <div class="piublock">  
             <div class="photobox">
                 <a class="photo" src="img/cat.jpg"></a>
@@ -36,14 +38,14 @@
         </div>
         <div>
             <h2>Ключевые Навыки:</h2>
-            <ul>
+            <ul id="list">
                 <li>HTML</li>
                 <li>CSS/LESS</li>
                 <li>JavaScript</li>
             </ul>
             <div>
-                    <input type="text" name="навык" placeholder="Введите навык...">
-                    <input type="submit" value="Добавить в список">
+                    <input id="textfield" type="text" name="навык" placeholder="Введите навык...">
+                    <input type="submit" value="Добавить в список" onClick="addAnother()">
             </div>
         </div>
         <div>
